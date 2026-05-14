@@ -218,7 +218,7 @@ where
 }
 
 /// Type alias for the stream type of the `connect_async()` functions.
-pub type ConnectStream = ClientStream<TcpStream>;
+pub type ConnectStream<S = TcpStream> = ClientStream<S>;
 
 /// Connect to a given URL.
 pub async fn connect_async<R>(
