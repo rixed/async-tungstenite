@@ -2,7 +2,7 @@
 
 use async_std::net::{TcpListener, TcpStream};
 use async_std::task;
-use async_tungstenite::{accept_async, client_async};
+use ng_async_tungstenite::{accept_async, client_async};
 
 #[async_std::test]
 async fn handshakes() {
